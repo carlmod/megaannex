@@ -23,6 +23,15 @@ Make the file executable, and link it into PATH
 
     cd ~/megaannex; chmod +x git-annex-remote-mega; sudo ln -sf `pwd`/git-annex-remote-mega /usr/local/bin/git-annex-remote-mega
 
+# Alternative setup method
+Run 
+
+    python setup.py bdist_wheel bdist_wheel
+
+to build a wheel of the software and install using
+
+    pip install megaannex
+
 # Commands for gitannex:
 
     USERNAME="user" PASSWORD="pword" git annex initremote mega type=external externaltype=mega encryption=shared folder=gitannex
