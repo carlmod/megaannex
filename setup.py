@@ -65,5 +65,6 @@ setup(
         'lib/errors',
         'lib/mega',
         'lib/CommonFunctions',
+        'lib/__init__',
     ],
 )

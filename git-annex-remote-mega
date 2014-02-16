@@ -22,9 +22,9 @@ if dbglevel:
 
 sys.path.append(pwd + '/lib')
 
-import CommonFunctions as common
-import mega
-import errors
+import lib.CommonFunctions as common
+import lib.mega as mega
+import lib.errors as errors
 
 if dbglevel > 3:
     mega_instance = mega.Mega({'verbose': True})  # verbose option for print output
